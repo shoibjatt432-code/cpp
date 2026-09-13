@@ -1,18 +1,15 @@
 #include <iostream>
 using namespace std;
 int main() {
-   // Declare variables for length, breadth, area, and perimeter
-   double length, breadth, area, perimeter;
-   // Input length and breadth from the user
-   cout << "Enter the length of the rectangle: ";
-   cin >> length;
-   cout << "Enter the breadth of the rectangle: ";
-   cin >> breadth;
-   // Calculate area and perimeter
-   area = length * breadth;
-   perimeter = 2 * (length + breadth);
-   // Display the results
-   cout << "Area of the rectangle: " << area << endl;
-   cout << "Perimeter of the rectangle: " << perimeter << endl;
+   // Initialize the array with given values
+   double arr[] = {1.1, 2.2, 3.3, 4.4, 5.5};
+   int n = sizeof(arr) / sizeof(arr[0]); // Calculate the number of elements in the array
+   double sum = 0; // Variable to store the sum
+   // Iterate through the array and calculate the sum
+   for (int i = 0; i < n; i++) {
+       sum += arr[i];
+   }
+   // Output the result
+   cout << "The sum of the array elements is: " << sum << endl;
    return 0;
 }
